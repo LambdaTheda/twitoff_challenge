@@ -3,12 +3,12 @@
 from flask import Flask
 
 from app_dev.routes.wel_routes import wel_routes
-#from web_app.routes.book_routes import book_routes
+from app_dev.routes.tweet_routes import tweet_routes
 
 def create_app():
     app = Flask(__name__)
     app.register_blueprint(wel_routes)
-    #app.register_blueprint(book_routes)
+    app.register_blueprint(tweet_routes)
     return app
 
 if __name__ == "__main__":
