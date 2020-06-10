@@ -26,5 +26,5 @@ open vs code: code .
 # Usage
 
 ```sh
-to activate flask: set FLASK_APP=tweet_home.py flask run
+to activate flask: set FLASK_APP=app_dev.py flask run
 ```
