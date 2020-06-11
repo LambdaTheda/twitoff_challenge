@@ -21,17 +21,17 @@ def list_tweets_from_twitter():
     return render_template("tweets.html", message="What are they saying on Twitter", tweets=tweets)
 
 
-#@book_routes.route("/books/new")
-#def new_book():
-#    return render_template("new_book.html")
+@tweet_routes.route("/tweets/new")
+def new_tweet():
+    return render_template("new_tweet.html")
 
-#@book_routes.route("/books/create", methods=["POST"])
-#def create_book():
-#    print("FORM DATA:", dict(request.form))
+@tweet_routes.route("/tweets/create", methods=["POST"])
+def create_tweet():
+    print("FORM DATA:", dict(request.form))
     # todo: store in database
-#    return jsonify({
-#        "message": "BOOK CREATED OK (TODO)",
-#        "book": dict(request.form)
-#    })
+    return jsonify({
+        "message": "TWEET CREATED OK (TODO)",
+        "tweet": dict(request.form)
+    })
     #flash(f"Book '{new_book.title}' created successfully!", "success")
     #return redirect(f"/books")
