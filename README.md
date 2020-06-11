@@ -21,6 +21,11 @@ install packages: pip install Flask Flask-SQLAlchemy Flask-Migrate
 activate envirornment: pipenv\Scripts\activate
 
 open vs code: code .
+
+Migrate the database:
+flask db init
+flask db migrate
+flask db upgrade
 ```
 
 # Usage
