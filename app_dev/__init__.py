@@ -5,6 +5,8 @@ from flask import Flask
 from app_dev.models import db, migrate
 from app_dev.routes.wel_routes import wel_routes
 from app_dev.routes.tweet_routes import tweet_routes
+from app_dev.routes.twitter_routes import twitter_routes
+
 
 DATABASE_URI = "sqlite:///twitoff_dev_app.db" # using relative filepath
 #DATABASE_URI = "sqlite:////Users/Username/Desktop/your-repo-name/web_app_99.db" # using absolute filepath on Mac (recommended)
@@ -19,6 +21,7 @@ def create_app():
 
     app.register_blueprint(wel_routes)
     app.register_blueprint(tweet_routes)
+    app.register_blueprint(twitter_routes)
     return app
 
 if __name__ == "__main__":

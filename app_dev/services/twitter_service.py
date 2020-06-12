@@ -1,9 +1,5 @@
-import tweepy
-
 # app_dev/services/twitter_service.py
-
 import tweepy
-
 import os
 from pprint import pprint
 from dotenv import load_dotenv
@@ -42,5 +38,5 @@ if __name__ == "__main__":
     print(type(tweets))
 
     for tweet in tweets:
-    print("------")
-    print(tweets[0].id, tweets[0].full_text)
+        print("------")
+        print(tweets[0].id, tweets[0].full_text)
